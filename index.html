@@ -69,12 +69,20 @@
             }
 
             if(num > random) {
-                alert('smaller, please!');
+                Swal.fire({
+                    title: 'Oops!',
+                    text: '再小一點哦!',
+                    icon: 'warning',
+                })
                 return;
             }
 
             if(num < random) {
-                alert('Hey bigger, please!');
+                Swal.fire({
+                    title: 'Oops!',
+                    text: '再大一點哦!',
+                    icon: 'warning',
+                })
             }
 
             console.log(random);
