@@ -60,7 +60,11 @@
             console.log(typeof random);
 
             if (num === random) {  //triple等於是嚴格的判斷
-                alert('Good Job, You are right ~ ');
+                Swal.fire({
+                    title: 'Good Job!',
+                    text: '猜對了哦!',
+                    icon: 'success',
+                })
                 return;
             }
 
